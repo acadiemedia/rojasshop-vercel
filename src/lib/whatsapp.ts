@@ -9,11 +9,11 @@ export const SHOP_HOURS = {
   weekdays: "Lun – Sáb: 8:00 a.m. – 8:00 p.m.",
   sunday: "Domingo: 9:00 a.m. – 1:00 p.m.",
 };
-// Embedded Google Maps query for Cayma area
+// Embedded Google Maps query for the correct location in Cayma
 export const MAPS_EMBED_SRC =
-  "https://www.google.com/maps?q=Ferreter%C3%ADa%20Cayma%20Arequipa&output=embed";
+  "https://www.google.com/maps?q=-16.342890,-71.541160&z=17&output=embed";
 export const MAPS_DIRECTIONS_URL =
-  "https://www.google.com/maps/search/?api=1&query=Ferreter%C3%ADa+Rojas+Cayma+Arequipa";
+  "https://maps.app.goo.gl/5VMF15ydt2RFB4Uv6";
 
 export function whatsappLink(message?: string): string {
   const base = `https://wa.me/${WHATSAPP_NUMBER}`;
