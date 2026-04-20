@@ -55,15 +55,10 @@ export function SiteFooter() {
 
         <div>
           <h3 className="text-sm font-bold uppercase tracking-wider">Navegación</h3>
-          <ul className="mt-3 space-y-2 text-sm">
+          <ul className="mt-3 space-y-2 text-sm text-primary-foreground/90">
             <li>
               <Link to="/" className="hover:underline">
                 Inicio
-              </Link>
-            </li>
-            <li>
-              <Link to="/catalogo" className="hover:underline">
-                Catálogo
               </Link>
             </li>
             <li>

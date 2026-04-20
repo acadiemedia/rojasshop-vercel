@@ -6,7 +6,6 @@ import { SHOP_NAME } from "@/lib/whatsapp";
 
 const navItems = [
   { to: "/", label: "Inicio" },
-  { to: "/catalogo", label: "Catálogo" },
   { to: "/contacto", label: "Contacto" },
 ] as const;
 

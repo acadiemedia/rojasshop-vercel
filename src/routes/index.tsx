@@ -95,59 +95,25 @@ function HomePage() {
         </div>
       </section>
 
-      {/* QUICK CATALOG */}
-      <section className="mx-auto max-w-6xl px-4 py-14 md:py-20">
-        <div className="mb-8 flex flex-col items-start justify-between gap-3 md:flex-row md:items-end">
-          <div>
-            <h2 className="text-3xl font-extrabold text-foreground md:text-4xl">
-              Lo que encontrarás
-            </h2>
-            <p className="mt-2 text-muted-foreground">
-              Categorías principales — consulta disponibilidad por WhatsApp.
-            </p>
-          </div>
-          <Link
-            to="/catalogo"
-            className="inline-flex items-center gap-1 text-sm font-semibold text-primary hover:underline"
-          >
-            Ver catálogo completo <ArrowRight className="h-4 w-4" />
-          </Link>
-        </div>
-        <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-5">
-          {categories.map((cat) => (
-            <Link
-              key={cat.slug}
-              to="/catalogo"
-              className="group flex flex-col items-center gap-3 rounded-xl border border-border bg-card p-5 text-center shadow-[var(--shadow-soft)] transition-all hover:-translate-y-0.5 hover:border-primary hover:shadow-[var(--shadow-elegant)]"
-            >
-              <span className="flex h-14 w-14 items-center justify-center rounded-full bg-primary/25 text-primary transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
-                <cat.icon className="h-7 w-7" />
-              </span>
-              <span className="text-sm font-bold text-foreground">{cat.name}</span>
-            </Link>
-          ))}
-        </div>
-      </section>
-
       {/* WHY US */}
       <section className="bg-secondary">
         <div className="mx-auto max-w-6xl px-4 py-14 md:py-20">
-          <h2 className="text-3xl font-extrabold text-foreground md:text-4xl">
-            ¿Por qué elegirnos?
+          <h2 className="text-3xl font-extrabold text-foreground md:text-4xl text-center">
+            ¿Por qué visitarnos?
           </h2>
           <div className="mt-8 grid gap-5 md:grid-cols-3">
             {[
               {
                 title: "Cerca de ti, en Cayma",
-                body: "Sin viajar al centro de Arequipa. Vente caminando o pásate en moto, te atendemos al toque.",
+                body: "Ubicados en el corazón de Cayma. Ahorra tiempo y encuentra lo que necesitas para tus reparaciones rápidas.",
               },
               {
-                title: "Consejo de quien sabe",
-                body: "Atención de la familia. Te ayudamos a elegir lo correcto para que el trabajo salga bien a la primera.",
+                title: "Trato directo y familiar",
+                body: "Somos un negocio local. Te asesoramos personalmente para que lleves exactamente lo que tu hogar necesita.",
               },
               {
-                title: "Envíos a tu obra",
-                body: "Coordina por WhatsApp y te llevamos el material directo a tu obra en Cayma y alrededores.",
+                title: "Rapidez y confianza",
+                body: "Sin colas ni esperas largas. Atención al toque para que sigas con tu trabajo sin contratiempos.",
               },
             ].map((b) => (
               <div
